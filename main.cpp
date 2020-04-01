@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv)
 {
-    const size_t res = 1000;
+    const size_t res = 3000;
 
     const float x_grid_max = 2;
     const float x_grid_min = -x_grid_max;
@@ -19,8 +19,8 @@ int main(int argc, char **argv)
     const size_t y_res = res;
     const complex<float> y_step_size(0, (y_grid_max - y_grid_min) / (y_res - 1));
 
-    const unsigned short int max_iterations = 8;
-    const float threshold = 4.0f;
+    const unsigned short int max_iterations = 32;
+    const float threshold = 2.0f;
 
     float_grayscale luma;
     luma.px = x_res;
@@ -66,11 +66,7 @@ int main(int argc, char **argv)
 
             luma.pixel_data[float_index] = f;
         }
-
-        cout << endl;
     }
-
-    cout << endl;
 
 	write_float_grayscale_to_tga("out.tga", luma);
 
