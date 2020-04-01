@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv)
 {
-    const size_t res = 3000;
+    const size_t res = 1000;
 
     const float x_grid_max = 2;
     const float x_grid_min = -x_grid_max;
@@ -41,7 +41,7 @@ int main(int argc, char **argv)
         return 3;
     }
     
-    // Calculate Julia set
+    // Calculate Mandelbrot set
     complex<float> pos(x_grid_min, y_grid_min);
 
     for (size_t x = 0; x < x_res; x++, pos += x_step_size)
