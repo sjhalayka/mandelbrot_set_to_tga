@@ -1,1 +1,4 @@
-# mandelbrot_set_to_tga
+
+
+
+https://github.com/sjhalayka/ms_curvature
