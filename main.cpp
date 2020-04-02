@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 
         for (size_t y = 0; y < y_res; y++, pos += y_step_size)
         {
-            float magnitude = iterate_2d(pos, max_iterations, threshold);
+            float magnitude = iterate_mandelbrot(pos, max_iterations, threshold);
 
             // Truncate
             if (magnitude > threshold)

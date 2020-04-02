@@ -20,7 +20,7 @@ using std::endl;
 using namespace std;
 
 
-float iterate_2d(
+float iterate_mandelbrot(
     const complex<float> C,
     const short unsigned int max_iterations,
     const float threshold)
