@@ -9,13 +9,7 @@
 #include "image.h"
 
 
-#include <iostream>
-using std::cout;
-using std::endl;
-
-#include <iostream>
 #include <cmath>
-#include <vector>
 #include <complex>
 using namespace std;
 
