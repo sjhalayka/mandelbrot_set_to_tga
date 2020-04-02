@@ -14,7 +14,7 @@
 using namespace std;
 
 
-float iterate_mandelbrot(
+inline float iterate_mandelbrot(
     const complex<float> C,
     const short unsigned int max_iterations,
     const float threshold)
