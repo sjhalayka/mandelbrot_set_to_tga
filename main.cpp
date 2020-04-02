@@ -50,21 +50,19 @@ int main(int argc, char **argv)
 
         for (size_t y = 0; y < y_res; y++, pos += y_step_size)
         {
-            size_t float_index = y * x_res + x;
-
-            float f = iterate_2d(pos, max_iterations, threshold);
+            float magnitude = iterate_2d(pos, max_iterations, threshold);
 
             // Truncate
-            if (f > threshold)
-                f = threshold;
+            if (magnitude > threshold)
+                magnitude = threshold;
 
             // Normalize
-            f /= threshold;
+            magnitude /= threshold;
 
             // Invert
-            f = 1 - f;
+            magnitude = 1 - magnitude;
 
-            luma.pixel_data[float_index] = f;
+            luma.pixel_data[y * x_res + x] = magnitude;
         }
     }
 
