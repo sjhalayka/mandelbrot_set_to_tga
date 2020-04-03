@@ -28,9 +28,9 @@ int main(int argc, char **argv)
     luma.pixel_data.resize(static_cast<size_t>(luma.px)* static_cast<size_t>(luma.py));
 
     // Too small
-    if (luma.px < 3 || luma.py < 3)
+    if (luma.px == 0 || luma.py == 0)
     {
-        cout << "Template must be at least 3x3 pixels in size." << endl;
+        cout << "Template must be at least 1x1 pixels in size." << endl;
         return 2;
     }
 
