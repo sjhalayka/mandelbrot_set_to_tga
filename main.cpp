@@ -5,7 +5,7 @@
 #include "main.h"
 
 
-int main(int argc, char **argv)
+int main(void)
 {
     const size_t res = 3000;
 
