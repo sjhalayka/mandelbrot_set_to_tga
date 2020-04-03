@@ -7,7 +7,8 @@
 
 int main(void)
 {
-    const size_t res = 3000;
+    // Max TGA size is 65535x65535 pixels
+    const unsigned short int res = 3000;
 
     const float x_grid_max = 1.5;
     const float x_grid_min = -2.5;
