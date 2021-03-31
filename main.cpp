@@ -54,11 +54,11 @@ int main(void)
             float magnitude = iterate_mandelbrot(pos, max_iterations, threshold);
 
             // Truncate
-            if (magnitude > threshold)
-                magnitude = threshold;
+            if (magnitude > 2 * threshold)
+                magnitude = 2 * threshold;
 
             // Normalize
-            magnitude /= threshold;
+            magnitude /= 2 * threshold;
 
             // Invert
             magnitude = 1 - magnitude;
